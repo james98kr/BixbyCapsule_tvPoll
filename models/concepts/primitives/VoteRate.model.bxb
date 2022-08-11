@@ -1,0 +1,3 @@
+decimal (VoteRate) {
+  description (Percentage of votes casted for certain candidate in previous election)
+}

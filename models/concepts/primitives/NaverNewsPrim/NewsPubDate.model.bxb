@@ -1,0 +1,3 @@
+text (NewsPubDate) {
+  description (published date of the news article from Naver search API)
+}

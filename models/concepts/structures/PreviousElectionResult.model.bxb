@@ -1,0 +1,27 @@
+structure (PreviousElectionResult) {
+  description (Results(득표율) of each candidate in previous elections)
+  property (electionName) {
+    type (ElectionName)
+    min (Required) max (One)
+  }
+  property (generalCandidateName) {
+    type (GeneralCandidateName)
+    min (Required) max (One)
+  }
+  property (partyName) {
+    type (PartyName)
+    min (Required) max (One)
+  }
+  property (voteRate) {
+    type (VoteRate)
+    min (Required) max (One)
+  }
+  property (voteNum) {
+    type (VoteNum)
+    min (Required) max (One)
+  }
+  property (candidateImg) {
+    type (CandidateImg)
+    min (Required) max (One)
+  }
+}

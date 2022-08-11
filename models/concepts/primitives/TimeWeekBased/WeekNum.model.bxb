@@ -1,0 +1,12 @@
+enum (WeekNum) {
+  description (Which week poll was taken within each month)
+  symbol (0)
+  symbol (1)
+  symbol (2)
+  symbol (3)
+  symbol (4)
+  symbol (5)
+  features {
+    transient
+  }
+}

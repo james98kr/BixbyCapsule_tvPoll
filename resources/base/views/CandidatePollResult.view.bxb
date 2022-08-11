@@ -1,0 +1,52 @@
+result-view {
+  match: CandidatePollResult (candidatePollResult) {
+    from-output: FindCandidateApprovalRate (findCandidateApprovalRate)
+  }
+
+  render {
+    if (size(candidatePollResult) == 1) {
+      layout-macro(candidatepollresult-one) {
+        param (result) {
+          expression (candidatePollResult)
+        }
+      }
+    }
+    else-if (size(candidatePollResult) > 1) {
+      list-of(candidatePollResult) {
+        where-each(result) {
+          layout-macro(candidatepollresult-many) {
+            param (result) {
+              expression (result)
+            }
+          }
+        }
+      }
+    }
+  }
+
+  conversation-drivers {
+    if (size(candidatePollResult) >= 1) {
+      conversation-driver {
+        template-macro (candidatepollresult-convdriver-who) {
+          param (result) {
+            expression (candidatePollResult)
+          }
+        }
+      }
+      conversation-driver {
+        template-macro (candidatepollresult-convdriver-when) {
+          param (result) {
+            expression (candidatePollResult)
+          }
+        }
+      }
+      conversation-driver {
+        template-macro (candidatepollresult-convdriver-which) {
+          param (result) {
+            expression (candidatePollResult)
+          }
+        }
+      }
+    }
+  }
+}

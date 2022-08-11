@@ -1,0 +1,3 @@
+text (Category) {
+  description (used for output only: which category of people or region the poll is based on)
+}

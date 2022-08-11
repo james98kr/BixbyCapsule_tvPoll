@@ -1,0 +1,34 @@
+capsule {
+  id (playground.tvPoll)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US) { enabled (false) }
+    target (bixby-mobile-ko-KR) { enabled (false) }
+    target (bixby-tv-ko-KR)
+  }
+  runtime-version (9) {
+    overrides {
+      allow-dialogs-on-detail-pages (true)
+      no-fallback-dialog-in-views (false)
+    }
+  }
+  store-countries {
+    all
+  }
+  device-models {
+    all
+  }
+  store-sections {
+    section (Utilities)
+    section (EducationAndReference)
+  }
+  capsule-imports {
+    import (viv.time) {
+      version (3.6.6) as (time)
+    }
+    import (viv.geo) {
+      version (9.28.2) as (geo)
+    }
+  }
+}

@@ -1,0 +1,4 @@
+train (t-bzxdytdxbmmgosk5jh4etmgsz) {
+  utterance ("[g:FindCandidateInfo] (안철수 후보)[v:CandidateName:안철수] (학력)[v:PersonalInfoType:학력] 알려줘")
+  last-modified (1644500447388)
+}

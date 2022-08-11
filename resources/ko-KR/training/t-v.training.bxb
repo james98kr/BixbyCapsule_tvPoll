@@ -1,0 +1,21 @@
+train (t-vk23r239lbv5pp0i94sxrieh5) {
+  utterance ("[g:FindCandidateApprovalRate] (이재명)[v:CandidateName:이재명] (11월)[v:Month:11] 지지율 찾아줘")
+  plan (fY7LCsIwEEVvffsDihtdiCuh/6AFdxYpgrgMZKjFNClpWujfm0HqJsUMJJk5J5dgiUOlRJdb02gZu/ZmlIoToWUhhSPuMqob5XAMtUuh5U89VZU1rVCZv2P3JzMVJWEbCrwlnufGdtgP83tR0oPofRY1yaEQ/lIvYh3yq9HuhU0IODVtSqxC9CRhsUCEEcaYYIoZ5r6Hn3DxhCvCd/UnvM1vZsAH)
+  last-modified (1644500164224)
+}
+train (t-vnm8r3gq2mpqwr7doyw21r1u1) {
+  utterance ("[g:FindCandidateInfo] (이재명)[v:CandidateName:이재명] (직업)[v:PersonalInfoType:직업]이 뭐야?")
+  last-modified (1644500396034)
+}
+train (t-vgbq2k2jwlq7m0zrzrngvar3y) {
+  utterance ("[g:FindCandidateApprovalRate:continue] (심상정)[v:CandidateName:심상정]은?")
+  last-modified (1644500321971)
+}
+train (t-v8t8fcwssu7bzvk6qw7b1i6h2) {
+  utterance ("[g:FindCandidateApprovalRate] (12월)[v:Month:12] (5주차)[v:WeekNum:5] (이재명)[v:CandidateName:이재명] (전체)[v:PollCategory:all] 지지율 얼마야?")
+  last-modified (1644500021552)
+}
+train (t-vopfnzbrb0mlh0rvzx8viouok) {
+  utterance ("[g:FindCandidateApprovalRate:continue] (50대)[v:PollCategory:50-59세] 지지율은?")
+  last-modified (1644500926148)
+}

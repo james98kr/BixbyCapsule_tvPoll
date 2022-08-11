@@ -1,0 +1,11 @@
+action (FindPreviousElectionResults) {
+  type (Search)
+  description (Find election results(개표 결과) of previous elections)
+  collect {
+    input (previousElection) {
+      type (PreviousElection)
+      min (Required) max (One)
+    }
+  }
+  output (PreviousElectionResult)
+}

@@ -1,0 +1,16 @@
+train (t-pk20041hdio72u21anmvwpvsp) {
+  utterance ("[g:FindCandidateApprovalRate] (세달 전)[v:time.DateTimeExpression] (대선 후보)[v:CandidateName:all] 지지율 알려줘")
+  last-modified (1644500505763)
+}
+train (t-pozs99vpe6lsvvjvig97xs5bs) {
+  utterance ("[g:FindCandidateInfo] (이재명 후보)[v:CandidateName:이재명] (경력)[v:PersonalInfoType:경력] 알려줘")
+  last-modified (1644500437163)
+}
+train (t-ptit3onytrwcrg2vhs1m6deys) {
+  utterance ("[g:FindCandidateApprovalRate] (안철수)[v:CandidateName:안철수] (40대)[v:PollCategory:40-49세] 지지율 알려줘")
+  last-modified (1644500115793)
+}
+train (t-p5ybvh1923bz3ktt8jbrmbihe) {
+  utterance ("[g:FindCandidateApprovalRate] (저번 달)[v:time.DateTimeExpression] (안철수)[v:CandidateName:안철수] (전체)[v:PollCategory:all] 지지율 찾아줘")
+  last-modified (1644498142492)
+}

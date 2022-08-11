@@ -1,0 +1,36 @@
+layout-macro-def (candidatepollresult-many) {
+  params {
+    param (result) {
+      type (CandidatePollResult)
+      min (Required) max (One)
+    }
+  }
+
+  content {
+    thumbnail-card {
+      image-aspect-ratio(3:4)
+      image-position(Start)
+      image-url("#{value(result.candidateImg)}")
+      title-area {
+        slot1 {
+          paragraph {
+            style(Title_L)
+            value("#{value(result.approvalRate)}")
+          }
+        }
+        slot2 {
+          paragraph {
+            style(Detail_L)
+            value("#{value(result.partyName)} #{value(result.candidateName)}")
+          }
+        }
+        slot3 {
+          paragraph {
+            style(Detail_M)
+            value("#{value(result.pollTimeWeekBased.year)}년 #{value(result.pollTimeWeekBased.month)}월 #{value(result.pollTimeWeekBased.weekNum)}주차 #{value(result.category)} 지지율")
+          }
+        }
+      }
+    }
+  }
+}

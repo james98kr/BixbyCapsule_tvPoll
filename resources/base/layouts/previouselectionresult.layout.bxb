@@ -1,0 +1,36 @@
+layout-macro-def (previouselectionresult) {
+  params {
+    param (result) {
+      type (PreviousElectionResult)
+      min (Required) max (One)
+    }
+  }
+
+  content {
+    thumbnail-card {
+      image-aspect-ratio(3:4)
+      image-position(Start)
+      image-url("#{value(result.candidateImg)}")
+      title-area {
+        slot1 {
+          paragraph {
+            style(Title_L)
+            value("#{value(result.voteRate)}%")
+          }
+        }
+        slot2 {
+          paragraph {
+            style(Detail_L)
+            value("#{value(result.partyName)} #{value(result.generalCandidateName)}")
+          }
+        }
+        slot3 {
+          paragraph {
+            style(Detail_M_Soft)
+            value("득표수: #{value(result.voteNum)}")
+          }
+        }
+      }
+    }
+  }
+}

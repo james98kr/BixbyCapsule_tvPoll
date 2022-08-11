@@ -1,0 +1,19 @@
+structure (CandidateInfoResult) {
+  description (the candidate info result of a specific candidate)
+  property (candidateName) {
+    type (CandidateName)
+    min (Required) max (One)
+  }
+  property (personalInfoType) {
+    type (PersonalInfoType)
+    min (Required) max (One)
+  }
+  property (personalInfoData) {
+    type (PersonalInfoData)
+    min (Required) max (One)
+  }
+  property (candidateImg) {
+    type (CandidateImg)
+    min (Required) max (One)
+  }
+}

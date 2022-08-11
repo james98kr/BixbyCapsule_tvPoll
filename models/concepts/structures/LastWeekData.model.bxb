@@ -1,0 +1,11 @@
+structure (LastWeekData) {
+  description (approval rate and polltimeweekbased information of certain candidate one week before actual search)
+  property (lastWeekApprovalRate) {
+    type (ApprovalRate)
+    min (Required) max (One)
+  }
+  property (lastWeekPollTimeWeekBased) {
+    type (PollTimeWeekBased)
+    min (Required) max (One)
+  }
+}

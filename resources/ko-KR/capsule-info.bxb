@@ -1,0 +1,13 @@
+capsule-info {
+  display-name (playground.tvPoll)
+  developer-name (이건규)
+  description ("Poll Data Analysis Capsule for TV(KR)")
+  dispatch-name (여론조사 캡슐)
+  search-keywords {
+    keyword (여론조사)
+    keyword (대선)
+    keyword (대선 후보)
+    keyword (지지율)
+  }
+  icon-asset (images/icons/bixby_launcher.png)
+}

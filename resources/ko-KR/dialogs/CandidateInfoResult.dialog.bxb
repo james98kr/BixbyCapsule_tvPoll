@@ -1,0 +1,20 @@
+dialog (Result) {
+  match: CandidateInfoResult (candidateInfoResult) {
+    from-output: FindCandidateInfo (findCandidateInfo)
+  }
+
+  if (size(candidateInfoResult) == 4) {
+    template ("#{value(candidateInfoResult[0].personalInfoData)} #{value(candidateInfoResult[0].candidateName)} 후보에 대한 정보입니다.")
+  }
+  else-if (size(candidateInfoResult) == 3) {
+    if (value(candidateInfoResult[2].personalInfoType) == "주소"){
+      template ("#{value(candidateInfoResult[0].candidateName)} 후보의 #{value(candidateInfoResult[2].personalInfoType)}는 #{value(candidateInfoResult[2].personalInfoData)} 입니다.")
+    }
+    else-if (value(candidateInfoResult[2].personalInfoType) == "나이") {
+      template ("#{value(candidateInfoResult[0].candidateName)} 후보의 #{value(candidateInfoResult[2].personalInfoType)}는 #{value(candidateInfoResult[2].personalInfoData)} 입니다.")
+    }
+    else {
+      template ("#{value(candidateInfoResult[0].candidateName)} 후보의 #{value(candidateInfoResult[2].personalInfoType)}은 #{value(candidateInfoResult[2].personalInfoData)} 입니다.")
+    }
+  }
+}

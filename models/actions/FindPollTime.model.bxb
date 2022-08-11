@@ -1,0 +1,38 @@
+action (FindPollTime) {
+  type (Constructor)
+  description (Create PollTimeWeekBased model for FindCandidateApprovalRate action)
+  collect {
+    input (year) {
+      type (Year)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: Year (0)
+        }
+      }
+    }
+    input (month) {
+      type (Month)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: Month (0)
+        }
+      }
+    }
+    input (weekNum) {
+      type (WeekNum)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: WeekNum (0)
+        }
+      }
+    }
+    input (dateTimeExpression) {
+      type (time.DateTimeExpression)
+      min (Optional) max (One)
+    }
+  }
+  output (PollTimeWeekBased)
+}

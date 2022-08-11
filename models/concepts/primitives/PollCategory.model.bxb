@@ -1,0 +1,18 @@
+enum (PollCategory) {
+  description (Category required for searching approval rate)
+  symbol (all)
+  symbol (exp_all)
+  symbol (18-29세)
+  symbol (30-39세)
+  symbol (40-49세)
+  symbol (50-59세)
+  symbol (60-69세)
+  symbol (70세 이상)
+  symbol (서울)
+  symbol (인천/경기)
+  symbol (대전/세종/충청)
+  symbol (광주/전라)
+  symbol (대구/경북)
+  symbol (부산/울산/경남)
+  symbol (강원/제주)
+}

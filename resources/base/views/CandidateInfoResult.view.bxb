@@ -1,0 +1,24 @@
+result-view {
+  match: CandidateInfoResult (candidateInfoResult) {
+    from-output: FindCandidateInfo (findCandidateInfo)
+  }
+
+  render {
+    // When user asks for general candidate information
+    if (size(candidateInfoResult) == 4) {
+      layout-macro(candidateinforesult-general) {
+        param (result) {
+          expression (candidateInfoResult)
+        }
+      }
+    }
+    // When user asks for specific candidate information
+    else-if (size(candidateInfoResult) == 3) {
+      layout-macro(candidateinforesult-specific) {
+        param (result) {
+          expression (candidateInfoResult)
+        }
+      }
+    }
+  }
+}

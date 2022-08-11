@@ -1,0 +1,3 @@
+text (ApprovalRate) {
+  description (approval rate of certain candidate or party resulting from a poll)
+}

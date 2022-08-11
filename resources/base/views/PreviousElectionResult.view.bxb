@@ -1,0 +1,17 @@
+result-view {
+  match: PreviousElectionResult (previousElectionResult) {
+    from-output: FindPreviousElectionResults (findPreviousElectionResults)
+  }
+
+  render {
+    list-of (previousElectionResult) {
+      where-each (result) {
+        layout-macro (previouselectionresult) {
+          param (result) {
+            expression (result)
+          }
+        }
+      }
+    }
+  }
+}

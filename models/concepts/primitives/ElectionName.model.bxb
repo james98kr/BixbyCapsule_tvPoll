@@ -1,0 +1,3 @@
+text (ElectionName) {
+  description (Name of previous election)
+}

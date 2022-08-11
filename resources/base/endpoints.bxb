@@ -1,0 +1,20 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (FindCandidateApprovalRate) {
+      accepted-inputs (candidateName, pollCategory, invalidCategory, pollTimeWeekBased)
+      local-endpoint ("FindCandidateApprovalRate.js")
+    }
+    action-endpoint (FindCandidateInfo) {
+      accepted-inputs (candidateName, personalInfoType)
+      local-endpoint ("FindCandidateInfo.js")
+    }
+    action-endpoint (FindPreviousElectionResults) {
+      accepted-inputs (previousElection)
+      local-endpoint ("FindPreviousElectionResults.js")
+    }
+    action-endpoint (FindPollTime) {
+      accepted-inputs (year, month, weekNum, dateTimeExpression)
+      local-endpoint ("FindPollTime.js")
+    }
+  }
+}

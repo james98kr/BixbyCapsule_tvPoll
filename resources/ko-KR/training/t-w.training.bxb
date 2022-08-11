@@ -1,0 +1,8 @@
+train (t-w202hv1yjplfun0z4uxm9j85m) {
+  utterance ("[g:FindPreviousElectionResults] (지난 대선)[v:PreviousElection:'제19대 대통령선거'] 결과 보여줘")
+  last-modified (1644398454499)
+}
+train (t-wik3f5tcvtw06fnel382btbsn) {
+  utterance ("[g:FindCandidateInfo] (심상정)[v:CandidateName:심상정] (나이)[v:PersonalInfoType:나이] 알려줘")
+  last-modified (1644500344680)
+}

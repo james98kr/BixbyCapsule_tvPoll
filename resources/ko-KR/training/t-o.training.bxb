@@ -1,0 +1,19 @@
+train (t-ozx0rsngv6xr5a01bmubov3in) {
+  utterance ("[g:FindCandidateApprovalRate] (11월)[v:Month:11] (둘째주)[v:WeekNum:2] (윤석열)[v:CandidateName:윤석열] 지지율 알려줘")
+  plan (fY7LCsIwEEVvffsDihtdiCuh/6AFdxYpgrgMZKjFNClpWujfm0HqJsUMJJk5J5dgiUOlRJdb02gZu/ZmlIoToWUhhSPuMqob5XAMtUuh5U89VZU1rVCZv2P3JzMVJWEbCrwlnufGdtgP83tR0oPofRY1yaEQ/lIvYh3yq9HuhU0IODVtSqxC9CRhsUCEEcaYYIoZ5r6Hn3DxhCvCd/UnPOE3bOMD)
+  last-modified (1644500173063)
+}
+train (t-ohkm731v5n9fheunujl8902hm) {
+  utterance ("[g:FindCandidateApprovalRate] (한달 전)[v:time.DateTimeExpression] (대선 후보)[v:CandidateName:all] 지지율 알려줘")
+  plan (fY7NCsIwEISn/usDKCLoQTwJfQeterOICOIxkEWDaVLStOjbmyj1EnEXssnM5GMxwCKX7Hk1ulQ8ttVBSxknTHHBmSX/OlJRSotlGNsJxb/RVZ4bXTF5dHfM/jBTlhGmYcAfifOv2jwx/+2fREZnovuaFcR/QfxKdRCj0N9rZW8Yh4anpmWGYWhdiBlMKlHF1lHjjdvR47eP3FBRCK3QR4QGmmihjQ666DkFTvPttU9H+FQ9fTXfP136BQ==)
+  last-modified (1644500404504)
+}
+train (t-owtbn1scss5dcck0j04j4ovo6) {
+  utterance ("[g:FindCandidateApprovalRate] (올해)[v:time.DateTimeExpression] (1월)[v:Month:1] (넷째 주)[v:WeekNum:4] (윤석열)[v:CandidateName:윤석열] 지지율 알려줘")
+  plan (fU7JCgIxDH3uywcoIuhBPAnzD643RUQQj4UGLXbaodMZ9O9tFL1UTCBt3kbQxTTT4nFxtjAy8eXeap0shZFKCk+8HSgvtMcslm2UkV/pPMucLYU+hD/GfzJ3IiWMYgGPZeAv1j0w+c0fVUonottC5CR/hfBJHyH6Mb+1xl8xiAlO3RUpejF1JuEwLFWZ+JCarMKNHL++Z47yXFmDDiqoooY6GmiihXZAEDBuxt5dwbs+L1fj5WRPcDwB)
+  last-modified (1644500250619)
+}
+train (t-o0uqd8py3eqcxx6djyy9giili) {
+  utterance ("[g:FindCandidateApprovalRate] (1월)[v:Month:1] (둘째 주)[v:WeekNum:2] (안철수)[v:CandidateName:안철수] (충청도)[v:PollCategory:대전/세종/충청] 지지율 알려줘")
+  last-modified (1644500088199)
+}

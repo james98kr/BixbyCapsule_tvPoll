@@ -1,0 +1,23 @@
+structure (NaverNews) {
+  description (The model that holds the naver news object from the Naver search API)
+  property (title) {
+    type (NewsTitle)
+    min (Required) max (One)
+  }
+  property (originalLink) {
+    type (NewsOriginalLink)
+    min (Required) max (One)
+  }
+  property (link) {
+    type (NewsLink)
+    min (Required) max (One)
+  }
+  property (description) {
+    type (NewsDescription)
+    min (Required) max (One)
+  }
+  property (pubDate) {
+    type (NewsPubDate)
+    min (Required) max (One)
+  }
+}

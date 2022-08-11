@@ -1,0 +1,3 @@
+text (PartyName) {
+  description (Name of party subject to poll)
+}

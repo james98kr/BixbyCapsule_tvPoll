@@ -1,0 +1,13 @@
+train (t-fvffodavuvn96bzk0a0wu8swi) {
+  utterance ("[g:FindCandidateApprovalRate] (이번 달)[v:time.DateTimeExpression] (심상정)[v:CandidateName:심상정] 지지율 알려줘")
+  plan (fY7NCsIwEISn/usDKCLoQTwJfQeterOICOIxkEWDaVLStOjbmyj1EnEXssnM5GMxwCKX7Hk1ulQ8ttVBSxknTHHBmSX/OlJRSotlGNsJxb/RVZ4bXTF5dHfM/jBTlhGmYcAfifOv2jwx/+2fREZnovuaFcR/QfxKdRCj0N9rZW8Yh4anpmWGYWhdiBlMKlHF1lHjjdvR47eP3FBRCK3QR4QGmmihjQ666DkFTvPttU9H+FQ9fTXfP136BQ==)
+  last-modified (1644500149521)
+}
+train (t-fvpr5xuxqf1dxcryv6j9gg279) {
+  utterance ("[g:FindCandidateApprovalRate] (이재명)[v:CandidateName:이재명] 지지율 보여줘")
+  last-modified (1644500337836)
+}
+train (t-fgg344jvnr4zz8qavdukdygin) {
+  utterance ("[g:FindCandidateApprovalRate] (두 달 전)[v:time.DateTimeExpression] (윤석열)[v:CandidateName:윤석열] (50대)[v:PollCategory:50-59세] 지지율 찾아줘")
+  last-modified (1644500095138)
+}

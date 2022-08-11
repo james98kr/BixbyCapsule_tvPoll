@@ -1,0 +1,5 @@
+train (t-qf603q001fl2w2uc3mdhyxf5u) {
+  utterance ("[g:FindCandidateApprovalRate] (지난달)[v:time.DateTimeExpression] (대선 후보)[v:CandidateName:all] 지지율 얼마야?")
+  plan (fY7NCsIwEISn/usDKCLoQTwJfQeterOICOIxkEWDaVLStOjbmyj1EnEXssnM5GMxwCKX7Hk1ulQ8ttVBSxknTHHBmSX/OlJRSotlGNsJxb/RVZ4bXTF5dHfM/jBTlhGmYcAfifOv2jwx/+2fREZnovuaFcR/QfxKdRCj0N9rZW8Yh4anpmWGYWhdiBlMKlHF1lHjjdvR47eP3FBRCK3QR4QGmmihjQ666DkFTvPttU9H+FQ9fTXfP136BQ==)
+  last-modified (1644500495153)
+}

@@ -1,0 +1,5 @@
+train (t-8tk32o2eppcwr1yp0nm8znbi3) {
+  utterance ("[g:FindCandidateApprovalRate] (대선 후보들)[v:CandidateName:all] 지지율 알려줘")
+  plan (Y2BlUC3ISaxML8ovzUvRKykLyM/J0XNOzEvJTEksSQXxglKLS3NKGLQxlbll5qXAlToWFBTllyXmBAHZDPJ4zPRLzE1lkMNUACKcgfLp+UWVDMrY5UMyc1PDU1OznRKLU1MYWBgYGZgYmIE0A5AFgTDABJZjAAA=)
+  last-modified (1644500265888)
+}

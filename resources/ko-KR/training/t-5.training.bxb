@@ -1,0 +1,12 @@
+train (t-5gki2ulg8g4ud87eaxox07huw) {
+  utterance ("[g:FindCandidateInfo] (심상정)[v:CandidateName:심상정] (나이)[v:PersonalInfoType:나이]가 어떻게 돼?")
+  last-modified (1644500426393)
+}
+train (t-5t1r27j9h7tfuwlife4svimd2) {
+  utterance ("[g:FindCandidateApprovalRate] (이재명)[v:CandidateName:이재명] (70대)[v:PollCategory:'70세 이상'] 지지율 얼마야?")
+  last-modified (1644500068817)
+}
+train (t-58g08llsrby2vn9zh7tfh2c2v) {
+  utterance ("[g:FindCandidateApprovalRate] (심상정)[v:CandidateName:심상정] (전체)[v:PollCategory:all] 지지율 보여줘")
+  last-modified (1644500078198)
+}

@@ -1,0 +1,3 @@
+integer (VoteNum) {
+  description (Number of votes casted for certain candidate in previous election)
+}

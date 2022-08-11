@@ -1,0 +1,6 @@
+dialog (Result) {
+  match: PreviousElectionResult (previousElectionResult) {
+    from-output: FindPreviousElectionResults (findPreviousElectionResults)
+  }
+  template ("#{value(previousElectionResult[0].electionName)} 각 후보의 득표율 결과입니다.")
+}

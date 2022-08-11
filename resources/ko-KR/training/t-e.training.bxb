@@ -1,0 +1,21 @@
+train (t-edwknn40ng2fmes3peqsy53py) {
+  utterance ("[g:FindCandidateApprovalRate] (안철수 후보)[v:CandidateName:안철수] (11월)[v:Month:11] (넷째 주)[v:WeekNum:4] 지지율 얼마야?")
+  plan (fY7LCsIwEEVvffsDihtdiCuh/6AFdxYpgrgMZKjFNClpWujfm0HqJsUMJJk5J5dgiUOlRJdb02gZu/ZmlIoToWUhhSPuMqob5XAMtUuh5U89VZU1rVCZv2P3JzMVJWEbCrwlnufGdtgP83tR0oPofRY1yaEQ/lIvYh3yq9HuhU0IODVtSqxC9CRhsUCEEcaYYIoZ5r6Hn3DxhCvCd/UnPOE3bOMD)
+  last-modified (1644500523833)
+}
+train (t-e5ze2h6r27iijsfn9s7fjzoza) {
+  utterance ("[g:FindPreviousElectionResults] (17대 대선)[v:PreviousElection:'제17대 대통령선거'] 득표율 보여줘")
+  last-modified (1644458507106)
+}
+train (t-ecl8r5emd9tzv6f81gkhlaskk) {
+  utterance ("[g:FindCandidateInfo] (윤석열)[v:CandidateName:윤석열] (주소)[v:PersonalInfoType:주소]가 어디야?")
+  last-modified (1644500419134)
+}
+train (t-e3p3in5uaple06jwl64l86vku) {
+  utterance ("[g:FindCandidateApprovalRate] (11월)[v:Month:11] (둘째 주)[v:WeekNum:2] (이재명)[v:CandidateName:이재명] (울산시)[v:PollCategory:부산/울산/경남] 지지율 보여줘")
+  last-modified (1644500102929)
+}
+train (t-e25gyhiqunxajby139c5cqes8) {
+  utterance ("[g:FindCandidateApprovalRate] (아무말)[v:InvalidCategory] 지역 (윤석열)[v:CandidateName:윤석열] 지지율 알려줘")
+  last-modified (1644543315861)
+}

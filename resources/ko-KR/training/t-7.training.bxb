@@ -1,0 +1,8 @@
+train (t-7ry8j0f0lyk3twgmgftwwmo4g) {
+  utterance ("[g:FindCandidateApprovalRate] (대선 후보)[v:CandidateName:all] (나주)[v:InvalidCategory] 지역 지지율 알려줘")
+  last-modified (1644506259663)
+}
+train (t-76qv5edl1kef4b2k0oenyheej) {
+  utterance ("[g:FindCandidateApprovalRate] (11월)[v:Month:11] (4주차)[v:WeekNum:4] (홍길동)[v:InvalidCategory] 지지율 얼마야?")
+  last-modified (1644549483443)
+}

@@ -1,0 +1,7 @@
+enum (PreviousElection) {
+  description (Previous elections supported by the FindPreviousElectionResults action)
+  symbol (제16대 대통령선거)
+  symbol (제17대 대통령선거)
+  symbol (제18대 대통령선거)
+  symbol (제19대 대통령선거)
+}

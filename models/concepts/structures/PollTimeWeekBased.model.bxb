@@ -1,0 +1,18 @@
+structure (PollTimeWeekBased) {
+  description (time period when poll was taken - specifying which week of month)
+  property (year) {
+    type (Year)
+    min (Required) max (One)
+  }
+  property (month) {
+    type (Month)
+    min (Required) max (One)
+  }
+  property (weekNum) {
+    type (WeekNum)
+    min (Required) max (One)
+  }
+  // features {
+  //   transient
+  // }
+}

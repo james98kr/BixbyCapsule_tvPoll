@@ -1,0 +1,9 @@
+train (t-znoabxkkuh0cher6zr37arypk) {
+  utterance ("[g:FindCandidateApprovalRate] (안철수)[v:CandidateName:안철수] 지지율 얼마야?")
+  plan (Y2BlUC3ISaxML8ovzUvRKykLyM/J0XNOzEvJTEksSQXxglKLS3NKGLQxlbll5qXAlToWFBTllyXmBAHZDPJ4zPRLzE1lkMNUACKcgfLp+UWVDMrY5UMyc1PDU1OznRKLU1MYWBgYGZgYmIE0A5AFgTDABJZjAAA=)
+  last-modified (1644500257534)
+}
+train (t-zgayhsd9e8vq9z182f1uf17nh) {
+  utterance ("[g:FindCandidateInfo,v:PersonalInfoType:all] (안철수)[v:CandidateName:안철수]가 누구야?")
+  last-modified (1644500358922)
+}

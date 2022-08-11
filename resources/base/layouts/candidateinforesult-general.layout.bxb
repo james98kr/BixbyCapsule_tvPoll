@@ -1,0 +1,79 @@
+layout-macro-def (candidateinforesult-general) {
+  params {
+    param (result) {
+      type (CandidateInfoResult)
+      min (Required) max (Many)
+    }
+  }
+
+  content {
+    section {
+      content {
+        image {
+          aspect-ratio(3:4)
+          object-fit(Cover)
+          url("#{value(result[0].candidateImg)}")
+        }
+        title-area {
+          slot1 {
+            paragraph {
+              style(Title_L)
+              value("#{value(result[0].candidateName)}")
+            }
+          }
+          slot2 {
+            paragraph {
+              style(Title_S)
+              value("#{value(result[0].personalInfoData)} 대선 후보")
+            }
+          }
+        }
+        spacer
+        spacer
+        spacer
+        compound-card {
+          content {
+            single-line {
+              text {
+                style(Detail_L)
+                value("나이:")
+              }
+            }
+            paragraph {
+              style(Title_XS)
+              value("#{value(result[1].personalInfoData)}세")
+            }
+          }
+        }
+        compound-card {
+          content {
+            single-line {
+              text {
+                style(Detail_L)
+                value("학력:")
+              }
+            }
+            paragraph {
+              style(Title_XS)
+              value("#{value(result[2].personalInfoData)}")
+            }
+          }
+        }
+        compound-card {
+          content {
+            single-line {
+              text {
+                style(Detail_L)
+                value("경력:")
+              }
+            }
+            paragraph {
+              style(Title_XS)
+              value("#{value(result[3].personalInfoData)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

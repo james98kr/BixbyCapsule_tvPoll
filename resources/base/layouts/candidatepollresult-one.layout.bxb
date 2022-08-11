@@ -1,0 +1,116 @@
+layout-macro-def (candidatepollresult-one) {
+  params {
+    param (result) {
+      type (CandidatePollResult)
+      min (Required) max (One)
+    }
+  }
+
+  content {
+    section {
+      content {
+        image-card {
+          aspect-ratio(3:4)
+          image-object-position(Center)
+          image-url("#{value(result.candidateImg)}")
+          text-position(Overlay)
+          title-area {
+            slot1 {
+              paragraph {
+                style(Title_XXL)
+                value("#{value(result.approvalRate)}")
+              }
+            }
+            slot2 {
+              paragraph {
+                style(Title_S)
+                value("#{value(result.partyName)} #{value(result.candidateName)}")
+              }
+            }
+            slot3 {
+              single-line {
+                text {
+                  style(Detail_M)
+                  value("#{value(result.pollTimeWeekBased.year)}년 #{value(result.pollTimeWeekBased.month)}월 #{value(result.pollTimeWeekBased.weekNum)}주차 #{value(result.category)} 지지율")
+                }
+              }
+            }
+          }
+        }
+        
+        hbox {
+          content {
+            vbox {
+              content {
+                text {
+                  style(Detail_M_Soft)
+                  value("#{value(result.lastWeek.lastWeekPollTimeWeekBased.year)}년 #{value(result.lastWeek.lastWeekPollTimeWeekBased.month)}월 #{value(result.lastWeek.lastWeekPollTimeWeekBased.weekNum)}주차")
+                }
+                text {
+                  style(Detail_L)
+                  value("#{value(result.lastWeek.lastWeekApprovalRate)}")
+                }
+              }
+              grow(1)
+              halign(Center)
+            }
+            divider vbox {
+              content {
+                text {
+                  style(Detail_L)
+                  value("#{value(result.pollTimeWeekBased.year)}년 #{value(result.pollTimeWeekBased.month)}월 #{value(result.pollTimeWeekBased.weekNum)}주차")
+                }
+                text {
+                  style(Title_L)
+                  value("#{value(result.approvalRate)}")
+                }
+              }
+              grow(2)
+              halign(Center)
+            }
+            divider vbox {
+              content {
+                text {
+                  style(Detail_M_Soft)
+                  value("#{value(result.nextWeek.nextWeekPollTimeWeekBased.year)}년 #{value(result.nextWeek.nextWeekPollTimeWeekBased.month)}월 #{value(result.nextWeek.nextWeekPollTimeWeekBased.weekNum)}주차")
+                }
+                text {
+                  style(Detail_L)
+                  value("#{value(result.nextWeek.nextWeekApprovalRate)}")
+                }
+              }
+              grow(1)
+              halign(Center)
+            }
+          }
+        }
+
+        for-each (result.naverNews) {
+          as (article) {
+            compound-card {
+              content {
+                paragraph {
+                  style(Detail_L)
+                  value("#{value(article.title)}")
+                }
+                single-line {
+                  text {
+                    style(Detail_M_Soft)
+                    value("#{value(article.pubDate)}")
+                  }
+                }
+                paragraph {
+                  style(Detail_M)
+                  value("#{value(article.description)}")
+                }
+              }
+              on-click {
+                url("#{value(article.link)}")
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

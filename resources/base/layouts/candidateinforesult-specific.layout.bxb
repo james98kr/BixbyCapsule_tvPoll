@@ -1,0 +1,44 @@
+layout-macro-def (candidateinforesult-specific) {
+  params {
+    param (result) {
+      type (CandidateInfoResult)
+      min (Required) max (Many)
+    }
+  }
+
+  content {
+    section {
+      content {        
+        image-card {
+          aspect-ratio(4:3)
+          image-url("#{value(result[0].candidateImg)}")
+          text-position(Overlay)
+          title-area {
+            slot1 {
+              paragraph {
+                style(Title_L)
+                value("#{value(result[0].candidateName)}")
+              }
+            }
+            slot2 {
+              single-line {
+                text {
+                  style(Detail_L)
+                  value("#{value(result[2].personalInfoType)}")
+                }
+              }
+            }
+            slot3 {
+              single-line {
+                text {
+                  style(Title_XS)
+                  value("#{value(result[2].personalInfoData)}")
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

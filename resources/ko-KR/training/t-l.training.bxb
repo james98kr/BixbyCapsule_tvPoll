@@ -1,0 +1,16 @@
+train (t-lgdggjy44gx2r87ckdqo0cok0) {
+  utterance ("[g:FindCandidateInfo] (윤석열)[v:CandidateName:윤석열] (정보)[v:PersonalInfoType:all] 찾아줘")
+  last-modified (1644500373429)
+}
+train (t-limyxhmena3l4mhq3egk8tzm6) {
+  utterance ("[g:FindCandidateApprovalRate:continue] (안철수)[v:CandidateName:안철수]는?")
+  last-modified (1644500314888)
+}
+train (t-ljv39o9gjo10v6qqtij422v40) {
+  utterance ("[g:FindCandidateApprovalRate] (심상정)[v:CandidateName:심상정] (대전)[v:PollCategory:대전/세종/충청] 지역 지지율 알려줘")
+  last-modified (1644500122427)
+}
+train (t-l1w81qx0fqsjn2hlb71vxab6y) {
+  utterance ("[g:FindCandidateApprovalRate] (대선 후보)[v:CandidateName:all] (30대)[v:PollCategory:30-39세] 지지율 알려줘")
+  last-modified (1644500233107)
+}

@@ -1,0 +1,9 @@
+train (t-1afejaouvf2669v9l3c4tk6av) {
+  utterance ("[g:FindCandidateApprovalRate] (작년)[v:time.DateTimeExpression] (11월)[v:Month:11] (이재명)[v:CandidateName:이재명] 지지율 알려줘")
+  plan (fY7JCgIxEETLffkARQQ9iCdh/sH1pogI4jGQRoOZZMhkBv1704peInZDOqmqPBpdTDMtHhdnCyMTX+6t1slSGKmk8MSvA+WF9pjFsY0y8hudZ5mzpdCHcMf4D3MnUsIoDvCxDP7Fugcmv/2jSulEdFuInOQvCK/0CaIf+1tr/BWD2GDqrkjRi60zCYdhqcrEB2qyCjsyfn3PHOW5sgYdVFBFDXU00EQL7aAgaNysvbuCd30mV/31s8n5Jw==)
+  last-modified (1644500291986)
+}
+train (t-14bbxoytmin2tk3cl6ghbhv0x) {
+  utterance ("[g:FindCandidateInfo,v:PersonalInfoType:all] (심상정)[v:CandidateName:심상정]이 누구야?")
+  last-modified (1644500365758)
+}

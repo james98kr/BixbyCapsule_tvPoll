@@ -1,0 +1,6 @@
+text (InvalidCategory) {
+  description (invalid category input)
+  features {
+    transient
+  }
+}

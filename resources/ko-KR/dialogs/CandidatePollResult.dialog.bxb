@@ -1,0 +1,12 @@
+dialog (Result) {
+  match: CandidatePollResult (candidatePollResult) {
+    from-output: FindCandidateApprovalRate (findCandidateApprovalRate)
+  }
+
+  if (size(candidatePollResult) == 1) {
+    template ("#{value(candidatePollResult.pollTimeWeekBased.year)}년 #{value(candidatePollResult.pollTimeWeekBased.month)}월 #{value(candidatePollResult.pollTimeWeekBased.weekNum)}주차 #{value(candidatePollResult.candidateName)} 후보의 #{value(candidatePollResult.category)} 지지율은 #{value(candidatePollResult.approvalRate)} 입니다.")
+  }
+  else-if (size(candidatePollResult) > 1) {
+    template ("대선 후보들의 #{value(candidatePollResult[0].pollTimeWeekBased.year)}년 #{value(candidatePollResult[0].pollTimeWeekBased.month)}월 #{value(candidatePollResult[0].pollTimeWeekBased.weekNum)}주차 #{value(candidatePollResult[0].category)} 지지율입니다.")
+  }
+}

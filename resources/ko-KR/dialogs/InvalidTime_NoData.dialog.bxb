@@ -1,0 +1,22 @@
+template-macro-def (invalidtime-nodata) {
+  params {
+    param (pollTimeWeekBased) {
+      type (PollTimeWeekBased)
+    }
+  }
+
+  content {
+    if (value(pollTimeWeekBased.year) == 0 && value(pollTimeWeekBased.weekNum) == 0) {
+      template ("죄송해요. [#{value(pollTimeWeekBased.month)}월] 여론조사 결과 데이터를 찾지 못했어요.")
+    }
+    else-if (value(pollTimeWeekBased.year) != 0 && value(pollTimeWeekBased.weekNum) == 0) {
+      template ("죄송해요. [#{value(pollTimeWeekBased.year)}년] [#{value(pollTimeWeekBased.month)}월] 여론조사 결과 데이터를 찾지 못했어요.")
+    }
+    else-if (value(pollTimeWeekBased.year) == 0 && value(pollTimeWeekBased.weekNum) != 0) {
+      template ("죄송해요. [#{value(pollTimeWeekBased.month)}월] [#{value(pollTimeWeekBased.weekNum)}주차] 여론조사 결과 데이터를 찾지 못했어요.")
+    }
+    else-if (value(pollTimeWeekBased.year) != 0 && value(pollTimeWeekBased.weekNum) != 0) {
+      template ("죄송해요. [#{value(pollTimeWeekBased.year)}년] [#{value(pollTimeWeekBased.month)}월] [#{value(pollTimeWeekBased.weekNum)}주차] 여론조사 결과 데이터를 찾지 못했어요.")
+    }
+  }
+}

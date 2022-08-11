@@ -1,0 +1,39 @@
+structure (CandidatePollResult) {
+  description (the approval rate poll result of specific candidate(s), with some conditions)
+  property (category) {
+    type (Category)
+    min (Required) max (One)
+  }
+  property (candidateName) {
+    type (CandidateName)
+    min (Required) max (One)
+  }
+  property (partyName) {
+    type (PartyName)
+    min (Required) max (One)
+  }
+  property (approvalRate) {
+    type (ApprovalRate)
+    min (Required) max (One)
+  }
+  property (pollTimeWeekBased) {
+    type (PollTimeWeekBased)
+    min (Required) max (One)
+  }
+  property (naverNews) {
+    type (NaverNews)
+    min (Required) max (Many)
+  }
+  property (candidateImg) {
+    type (CandidateImg)
+    min (Required) max (One)
+  }
+  property (lastWeek) {
+    type (LastWeekData)
+    min (Required) max (One)
+  }
+  property (nextWeek) {
+    type (NextWeekData)
+    min (Required) max (One)
+  }
+}

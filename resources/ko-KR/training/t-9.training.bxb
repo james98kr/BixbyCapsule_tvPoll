@@ -1,0 +1,4 @@
+train (t-904xymlyx54uhpio62ay9u9rr) {
+  utterance ("[g:FindCandidateApprovalRate] (안철수)[v:CandidateName:안철수] (11월)[v:Month:11] (4주차)[v:WeekNum:4] 지지율 보여줘")
+  last-modified (1644500307646)
+}

@@ -1,0 +1,8 @@
+enum (CandidateName) {
+  description (Name of candidate subject to poll)
+  symbol (all)
+  symbol (이재명)
+  symbol (윤석열)
+  symbol (심상정)
+  symbol (안철수)
+}

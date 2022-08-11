@@ -1,0 +1,15 @@
+enum (PersonalInfoType) {
+  description (which type of information the user wants)
+  symbol (all)
+  symbol (정당)
+  symbol (성별)
+  symbol (생일)
+  symbol (나이)
+  symbol (주소)
+  symbol (직업)
+  symbol (학력)
+  symbol (경력)
+  features {
+    transient
+  }
+}

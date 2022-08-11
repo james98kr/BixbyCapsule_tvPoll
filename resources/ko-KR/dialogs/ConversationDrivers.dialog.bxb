@@ -1,0 +1,83 @@
+template-macro-def (candidatepollresult-convdriver-who) {
+  params {
+    param (result) {
+      type (CandidatePollResult)
+      max (Many)
+    }
+  }
+
+  content {
+    choose (Random) {
+      template ("이재명 지지율은?")
+      template ("윤석열 지지율은?")
+      template ("심상정 지지율은?")
+      template ("안철수 지지율은?")
+    }
+  }
+}
+
+template-macro-def (candidatepollresult-convdriver-when) {
+  params {
+    param (result) {
+      type (CandidatePollResult)
+      max (Many)
+    }
+  }
+
+  content {
+    choose (Random) {
+      template ("이번 주 지지율은?")
+      template ("저번 주 지지율은?")
+      template ("2주 전 지지율은?")
+      template ("한 달 전 지지율은?")
+      template ("두 달 전 지지율은?")
+      template ("11월 둘째 주 지지율은?")
+      template ("11월 셋째 주 지지율은?")
+      template ("11월 넷째 주 지지율은?")
+      template ("12월 둘째 주 지지율은?")
+      template ("12월 넷째 주 지지율은?")
+      template ("12월 다섯째 주 지지율은?")
+      template ("1월 첫째 주 지지율은?")
+      template ("1월 둘째 주 지지율은?")
+      template ("1월 셋째 주 지지율은?")
+      template ("1월 넷째 주 지지율은?")
+      template ("2월 둘째 주 지지율은?")
+    }
+  }
+}
+
+template-macro-def (candidatepollresult-convdriver-which) {
+  params {
+    param (result) {
+      type (CandidatePollResult)
+      max (Many)
+    }
+  }
+
+  content {
+    choose (Random) {
+      template ("20대 지지율은?")
+      template ("30대 지지율은?")
+      template ("40대 지지율은?")
+      template ("50대 지지율은?")
+      template ("60대 지지율은?")
+      template ("70대 지지율은?")
+      template ("서울 지역 지지율은?")
+      template ("인천 지역 지지율은?")
+      template ("경기도 지지율은?")
+      template ("대전광역시 지지율은?")
+      template ("세종시 지지율은?")
+      template ("충청도 지지율은?")
+      template ("광주 지역 지지율은?")
+      template ("전라도 지지율은?")
+      template ("대구 지역 지지율은?")
+      template ("경상북도 지지율은?")
+      template ("경상남도 지지율은?")
+      template ("경상북도 지지율은?")
+      template ("부산 지역 지지율은?")
+      template ("울산 지역 지지율은?")
+      template ("강원도 지지율은?")
+      template ("제주도 지지율은?")
+    }
+  }
+}

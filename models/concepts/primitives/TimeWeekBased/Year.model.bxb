@@ -1,0 +1,6 @@
+integer (Year) {
+  description (Year when poll was taken)
+  features {
+    transient
+  }
+}

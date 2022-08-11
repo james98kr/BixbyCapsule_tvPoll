@@ -1,0 +1,4 @@
+train (t-rn2s1sliewgag24cbajfryqzl) {
+  utterance ("[g:FindCandidateApprovalRate] (심상정)[v:CandidateName:심상정] (전라도)[v:PollCategory:광주/전라] 지지율 알려줘")
+  last-modified (1644500109563)
+}

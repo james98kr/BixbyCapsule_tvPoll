@@ -1,0 +1,4 @@
+train (t-33yolnpcjjow1h6bjdu328901) {
+  utterance ("[g:FindCandidateApprovalRate] (윤석열)[v:CandidateName:윤석열] (저번 달)[v:time.DateTimeExpression] (부산시)[v:PollCategory:부산/울산/경남] 지지율 알려줘")
+  last-modified (1644500299959)
+}

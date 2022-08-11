@@ -1,0 +1,13 @@
+train (t-2dfwp0hfivlvown4g6ycy5l8e) {
+  utterance ("[g:FindCandidateApprovalRate] (12월)[v:Month:12] (다섯번째 주)[v:WeekNum:5] (이재명 후보)[v:CandidateName:이재명] 지지율 얼마야?")
+  plan (fY7LCsIwEEVvffsDihtdiCuh/6AFdxYpgrgMZKjFNClpWujfm0HqJsUMJJk5J5dgiUOlRJdb02gZu/ZmlIoToWUhhSPuMqob5XAMtUuh5U89VZU1rVCZv2P3JzMVJWEbCrwlnufGdtgP83tR0oPofRY1yaEQ/lIvYh3yq9HuhU0IODVtSqxC9CRhsUCEEcaYYIoZ5r6Hn3DxhCvCd/UnPOE3bOMD)
+  last-modified (1644500199844)
+}
+train (t-2c5beex47ugwsppl3ywik2z7g) {
+  utterance ("[g:FindCandidateInfo,v:PersonalInfoType:all] (윤석열)[v:CandidateName:윤석열]이 누구야?")
+  last-modified (1644500351179)
+}
+train (t-27kza5gtd4mr9chb7ikpce25q) {
+  utterance ("[g:FindCandidateApprovalRate] (워싱턴)[v:InvalidCategory] 지역 (대선 후보)[v:CandidateName:all] 지지율 보여줘")
+  last-modified (1644510650673)
+}

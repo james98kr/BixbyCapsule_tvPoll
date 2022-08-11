@@ -1,0 +1,3 @@
+text (PersonalInfoData) {
+  description (Specific information about a certain candidate)
+}

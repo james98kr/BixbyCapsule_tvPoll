@@ -1,0 +1,20 @@
+action (FindCandidateInfo) {
+  type (Search)
+  description (Shows specific information about a certain candidate)
+  collect {
+    input (candidateName) {
+      type (CandidateName)
+      min (Required) max (One)
+    }
+    input (personalInfoType) {
+      type (PersonalInfoType)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: PersonalInfoType (all)
+        }
+      }
+    }
+  }
+  output (CandidateInfoResult)
+}

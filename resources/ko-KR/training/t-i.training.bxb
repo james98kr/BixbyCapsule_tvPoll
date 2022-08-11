@@ -1,0 +1,12 @@
+train (t-irellbmka5lzmu4dnmv6cf2zt) {
+  utterance ("[g:FindPreviousElectionResults] (18대 대선)[v:PreviousElection:'제18대 대통령선거'] 결과 알려줘")
+  last-modified (1644458402903)
+}
+train (t-ikg3u2qion7dv76h86vruwwgv) {
+  utterance ("[g:FindCandidateApprovalRate] (윤석열 후보)[v:CandidateName:윤석열] (피자)[v:InvalidCategory] 지역 지지율 알려줘")
+  last-modified (1644506642633)
+}
+train (t-i4dx7m9htklqpybz46mrzle5y) {
+  utterance ("[g:FindCandidateApprovalRate] (2021년)[v:time.DateTimeExpression] (12월)[v:Month:12] (2주차)[v:WeekNum:2] 지지율 보여줘")
+  last-modified (1644508606430)
+}

@@ -1,0 +1,3 @@
+text (CandidateImg) {
+  description (Image URL for specific candidate)
+}

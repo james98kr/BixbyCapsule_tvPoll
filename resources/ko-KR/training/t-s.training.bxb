@@ -1,0 +1,8 @@
+train (t-syie88fulo5cwt15674exxc02) {
+  utterance ("[g:FindCandidateApprovalRate:continue] (이재명)[v:CandidateName:이재명]은?")
+  last-modified (1644500462115)
+}
+train (t-s3g7qx3f99l49bda23km4jll3) {
+  utterance ("[g:FindCandidateApprovalRate] (강원도)[v:PollCategory:강원/제주] 지역 (윤석열)[v:CandidateName:윤석열] 지지율 보여줘")
+  last-modified (1644543193887)
+}

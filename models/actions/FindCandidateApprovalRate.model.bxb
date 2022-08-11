@@ -1,0 +1,75 @@
+action (FindCandidateApprovalRate) {
+  type (Search)
+  description (Pass candidate name, age range, region, and time of polling to get approval rating)
+  collect {
+    input (candidateName) {
+      type (CandidateName)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: CandidateName (all)
+        }
+      }
+    }
+    input (pollCategory) {
+      type (PollCategory)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: PollCategory (all)
+        }
+      }
+    }
+    input (invalidCategory) {
+      type (InvalidCategory)
+      min (Optional) max (One)
+    }
+    input (pollTimeWeekBased) {
+      type (PollTimeWeekBased)
+      min (Required) max (One)
+      default-init {
+        intent {
+          goal: FindPollTime
+        }
+      }
+    }
+  }
+  output (CandidatePollResult) {
+    throws {
+      error (InvalidTime_NoData) {
+        on-catch {
+          halt {
+            dialog {
+              template-macro (invalidtime-nodata) {
+                param (pollTimeWeekBased) {
+                  expression (pollTimeWeekBased)
+                }
+              }
+            }
+          }
+        }
+      }
+      error (InvalidTime_NoMonth) {
+        on-catch {
+          halt {
+            dialog {
+              choose (Random) {
+                template ("원하시는 시간대를 좀 더 자세히 알려 주세요.")
+                template ("좀 더 구체적인 시간대를 말해 줄래요?")
+              }
+            }
+          }
+        }
+      }
+      error (InvalidCategory) {
+        on-catch {
+          halt {
+            dialog {
+              template ("죄송해요. #{value(invalidCategory)} 지지율에 관한 정보를 찾지 못했어요.")
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+train (t-4uq6s1wwwbc2s5lany87utlh3) {
+  utterance ("[g:FindCandidateApprovalRate:continue] (윤석열)[v:CandidateName:윤석열]은?")
+  last-modified (1644500330196)
+}
+train (t-48ir5km4yxv0xq0v32bh77dfp) {
+  utterance ("[g:FindCandidateApprovalRate] (이번 주)[v:time.DateTimeExpression] (윤석열)[v:CandidateName:윤석열] (전체)[v:PollCategory:all] 지지율 얼마야?")
+  last-modified (1644499998718)
+}
+train (t-48ganr2jmu50f8z33djg63lo4) {
+  utterance ("[g:FindCandidateApprovalRate] (전체 대선 후보들)[v:CandidateName:all] (런던)[v:InvalidCategory] 지지율 보여줘")
+  last-modified (1644506745721)
+}

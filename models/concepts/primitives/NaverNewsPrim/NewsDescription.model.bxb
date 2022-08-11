@@ -1,0 +1,3 @@
+text (NewsDescription) {
+  description (description of the news article from Naver search API)
+}
