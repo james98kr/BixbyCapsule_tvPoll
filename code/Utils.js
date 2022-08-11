@@ -50,7 +50,7 @@ function find_latest_time () {
   var curweeknum = 5;
   var curmonth = d.getMonth() + 1;
   var curyear = d.getFullYear();
-  var url = "https://raw.githubusercontent.com/james98kr/BixbyDevelopment/main/candidates/candidate";
+  var url = "https://raw.githubusercontent.com/james98kr/BixbyCapsule_tvPoll/main/assets/csv/candidate_polldata_csv/candidate";
   var temp = ""
   var flag = 0;
 
@@ -86,7 +86,7 @@ function find_latest_time () {
 
 function find_requested_time (year, month, weekNum) {
   var d = new Date();
-  var url = "https://raw.githubusercontent.com/james98kr/BixbyDevelopment/main/candidates/candidate";
+  var url = "https://raw.githubusercontent.com/james98kr/BixbyCapsule_tvPoll/main/assets/csv/candidate_polldata_csv/candidate";
   var temp = ""
   var flag = 0;
 
@@ -174,7 +174,7 @@ function find_requested_time (year, month, weekNum) {
 }
 
 function csvurl_to_array (year, month, weekNum) {
-  var url = "https://raw.githubusercontent.com/james98kr/BixbyDevelopment/main/candidates/candidate";
+  var url = "https://raw.githubusercontent.com/james98kr/BixbyCapsule_tvPoll/main/assets/csv/candidate_polldata_csv/candidate";
   url = url + "_" + String(year);
   url = url + "_" + strmonth(String(month));
   url = url + "_week" + String(weekNum) + ".csv";
@@ -356,7 +356,7 @@ function get_naver_imgs (keyword) {
 }
 
 function findlastweek (year, month, weekNum) {
-  var url = "https://raw.githubusercontent.com/james98kr/BixbyDevelopment/main/candidates/candidate";
+  var url = "https://raw.githubusercontent.com/james98kr/BixbyCapsule_tvPoll/main/assets/csv/candidate_polldata_csv/candidate";
   var result = {year: 0, month: 0, weekNum:0};
   if (weekNum > 1) {
     result = {year: year, month: month, weekNum: weekNum - 1};
@@ -384,7 +384,7 @@ function findlastweek (year, month, weekNum) {
 }
 
 function findnextweek (year, month, weekNum) {
-  var url = "https://raw.githubusercontent.com/james98kr/BixbyDevelopment/main/candidates/candidate";
+  var url = "https://raw.githubusercontent.com/james98kr/BixbyCapsule_tvPoll/main/assets/csv/candidate_polldata_csv/candidate";
   var result = {year: 0, month: 0, weekNum: 0};
   if (weekNum < 5) {
     result = {year: year, month: month, weekNum: weekNum + 1};
